@@ -88,7 +88,7 @@ void eraseMap(HashMap * map,  char * key) {
             return;
         }
 
-        indice = (indice) % map->capacity;
+        indice = (indice+1) % map->capacity;
 
         if (indice == original) break;
     }
